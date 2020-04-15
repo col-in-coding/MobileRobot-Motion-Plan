@@ -1,0 +1,136 @@
+function path = A_star_search(obstacles, xMax, yMax)
+%% *********** A Star Search  *************
+% Takes obstacles list (including start point in the first row and
+% end point in the last row) and map bounds
+% Returns a path from A* Search
+% 
+% h(n): heuristic lest cost from node n to goal state
+% g(n): the current best estimates of the accumulated cost from start to n
+% f(n) = h(n) + g(n)
+% Euclidean distance is implemented in this function
+%
+% Aurthor: Haoxiang(Colin) Li
+% ID: ColinCobot
+% ----------------------------------------------------------------
+
+    % Start and end points
+    startX = obstacles(1, 1);
+    startY = obstacles(1, 2);
+    endX = obstacles(end, 1);
+    endY = obstacles(end, 2);
+    
+    % Flag map, set to nodeId for visited nodes, -1 for obstacles, 0 for unvisited nodes
+    flagMap = zeros(xMax, yMax);
+    for i = 2 : size(obstacles, 1) - 1
+       x = obstacles(i, 1);
+       y = obstacles(i, 2);
+       flagMap(x, y) = -1;
+    end
+
+    % Lookup table with index for nodeId, used for tracing back
+    % | x| y| h(n)| g(n)| Parent id| isClosed
+    lookupTable = [];
+    
+    % Open List
+    % | Node id| f(n)|
+    openList = [];
+ 
+    % Setup with start node
+    hn = heuristic(startX, startY, endX, endY);
+    gn = 0;
+    lookupTable = [startX, startY, hn, gn, 0];
+    openList = [1, hn + gn];
+
+    %% Iteration, in Breadth-first searching
+    while(size(openList, 1))
+        % Fetch node from openList with lowest f(n) cost
+        [fn, openListId] = min(openList(:, 2));
+        nodeId = openList(openListId, 1);
+        openList(openListId, :) = [];
+        x  = lookupTable(nodeId, 1);
+        y  = lookupTable(nodeId, 2);
+        gn = lookupTable(nodeId, 4);
+        loopupTable(nodeId, 5) = 1;
+
+        % Exit Contidion: Path Found
+        if x == endX && y == endY
+            break
+        end
+
+        % Expand the node
+        for dx = -1 : 1 : 1
+            for dy = -1 : 1 : 1
+                xNew = x + dx;
+                yNew = y + dy;
+                
+                if dx == 0 && dy == 0
+                    % self node
+                    continue
+                elseif xNew <= 0 || xNew > xMax || yNew <= 0 || yNew > yMax
+                    % out of bound
+                    continue
+                elseif flagMap(xNew, yNew) == -1
+                    % is obstacle
+                    continue
+                end
+              
+                parentId = nodeId;
+                gnNew = gn + sqrt(dx ^ 2 + dy ^ 2);
+                hnNew = heuristic(xNew, yNew, endX, endY);
+              
+                if flagMap(xNew, yNew) == 0
+                    % unvisited node, update map and lookupTable
+                    newNodeId = size(lookupTable, 1) + 1;
+                    lookupTable = [lookupTable; xNew, yNew, hnNew, gnNew, parentId];
+                    % append new node to openlist
+                    openList = [openList; newNodeId, hnNew + gnNew];
+                    flagMap(xNew, yNew) = newNodeId;
+                else
+                    % visited node, update gn, fn
+                    preId = flagMap(xNew, yNew);
+                    gnPre = lookupTable(preId, 4);
+                    isClosed = lookupTable(preId, 5) == 1;
+                    if ~isClosed && gnPre > gnNew
+                        % new node has lower cost
+                        lookupTable(preId, 4) = gnNew;
+                        lookupTable(preId, 5) = parentId;
+                    end
+                end
+            end
+        end
+    end
+
+    %% Find a Path
+    nodeId = flagMap(endX, endY);
+    path = [];
+    if nodeId > 0
+        % path found
+        x = lookupTable(nodeId, 1);
+        y = lookupTable(nodeId, 2);
+        path = [path; x, y];
+        while lookupTable(nodeId, 5) > 0
+            % check parent nodeId
+            nodeId = lookupTable(nodeId, 5);
+            x = lookupTable(nodeId, 1);
+            y = lookupTable(nodeId, 2);
+            path = [path; x, y];
+        end        
+    end
+end
+
+%% ***** Heuristic Function *******
+function hn =  heuristic(x1, y1, x2, y2)
+    dx = abs(x1 - x2);
+    dy = abs(y1 - y2);
+    % Dijkstra
+%     hn = 0
+    % Euclidean Distance
+%     hn = sqrt(dx ^ 2 + dy ^ 2);
+    % Manhattan Distance
+    hn = dx + dy;
+    % Diagonal Distance
+    hn = dx + dy + (sqrt(2) - 2) * min(dx, dy);
+    
+    % tie breaker
+    hn = 1 / x1 * y
+end

@@ -1,0 +1,197 @@
+
+
+********************************   A* Searching   ***********************************
+0 Heuristic
+
+[ INFO] [1586510206.799653246]: [node] receive the planning target
+[ WARN] [1586510206.836024385]: [A*]{sucess}  Time in A*  is 36.270183 ms, path cost is 7.340377 m
+[ WARN] [1586510206.837303013]: visited_nodes size : 57224
+[ INFO] [1586510217.540315274]: [node] receive the planning target
+[ WARN] [1586510217.605430204]: [A*]{sucess}  Time in A*  is 65.016055 ms, path cost is 7.774691 m
+[ WARN] [1586510217.606263554]: visited_nodes size : 58032
+[ INFO] [1586510221.458882463]: [node] receive the planning target
+[ WARN] [1586510221.494828225]: [A*]{sucess}  Time in A*  is 35.841817 ms, path cost is 7.774691 m
+[ WARN] [1586510221.496170939]: visited_nodes size : 58033
+[ INFO] [1586510225.468416867]: [node] receive the planning target
+[ WARN] [1586510225.530511424]: [A*]{sucess}  Time in A*  is 61.997905 ms, path cost is 9.858214 m
+[ WARN] [1586510225.531898707]: visited_nodes size : 58237
+
+
+
+Manhattan Distance
+
+[ INFO] [1586507133.248688756]: [node] receive the planning target
+[ WARN] [1586507133.249071719]: [A*]{sucess}  Time in A*  is 0.259524 ms, path cost is 7.593967 m
+[ WARN] [1586507133.250211089]: visited_nodes size : 30
+[ INFO] [1586507139.658626518]: [node] receive the planning target
+[ WARN] [1586507139.659058637]: [A*]{sucess}  Time in A*  is 0.304400 ms, path cost is 7.774691 m
+[ WARN] [1586507139.660155107]: visited_nodes size : 49
+[ INFO] [1586507143.068672457]: [node] receive the planning target
+[ WARN] [1586507143.069005725]: [A*]{sucess}  Time in A*  is 0.206818 ms, path cost is 8.009006 m
+[ WARN] [1586507143.070433627]: visited_nodes size : 33
+[ INFO] [1586507146.458615748]: [node] receive the planning target
+[ WARN] [1586507146.476450002]: [A*]{sucess}  Time in A*  is 17.701660 ms, path cost is 10.092529 m
+[ WARN] [1586507146.477683900]: visited_nodes size : 5089
+
+
+
+Manhattan Distance via Tie Breaker
+
+[ INFO] [1586509680.095971477]: [node] receive the planning target
+[ WARN] [1586509680.096279280]: [A*]{sucess}  Time in A*  is 0.193821 ms, path cost is 7.476809 m
+[ WARN] [1586509680.097432709]: visited_nodes size : 28
+[ INFO] [1586509683.155916616]: [node] receive the planning target
+[ WARN] [1586509683.156367851]: [A*]{sucess}  Time in A*  is 0.339891 ms, path cost is 7.774691 m
+[ WARN] [1586509683.157673359]: visited_nodes size : 45
+[ INFO] [1586509685.965976367]: [node] receive the planning target
+[ WARN] [1586509685.966287549]: [A*]{sucess}  Time in A*  is 0.207958 ms, path cost is 8.009006 m
+[ WARN] [1586509685.967361463]: visited_nodes size : 32
+[ INFO] [1586509689.665977834]: [node] receive the planning target
+[ WARN] [1586509689.688470707]: [A*]{sucess}  Time in A*  is 22.361725 ms, path cost is 10.219664 m
+[ WARN] [1586509689.689800570]: visited_nodes size : 4874
+
+
+
+
+Euclidean Distance
+
+[ INFO] [1586507447.150234468]: [node] receive the planning target
+[ WARN] [1586507447.155358558]: [A*]{sucess}  Time in A*  is 4.997008 ms, path cost is 7.340377 m
+[ WARN] [1586507447.156538289]: visited_nodes size : 1044
+[ INFO] [1586507452.230267716]: [node] receive the planning target
+[ WARN] [1586507452.241999004]: [A*]{sucess}  Time in A*  is 11.603816 ms, path cost is 7.774691 m
+[ WARN] [1586507452.243146763]: visited_nodes size : 2475
+[ INFO] [1586507455.920268264]: [node] receive the planning target
+[ WARN] [1586507455.929139750]: [A*]{sucess}  Time in A*  is 8.752898 ms, path cost is 7.774691 m
+[ WARN] [1586507455.930377595]: visited_nodes size : 1948
+[ INFO] [1586507458.760267405]: [node] receive the planning target
+[ WARN] [1586507458.799458353]: [A*]{sucess}  Time in A*  is 39.089246 ms, path cost is 9.858214 m
+[ WARN] [1586507458.800089052]: visited_nodes size : 12629
+
+
+
+
+Euclidean Distance via Tie Breaker
+
+[ INFO] [1586509789.469056472]: [node] receive the planning target
+[ WARN] [1586509789.474055967]: [A*]{sucess}  Time in A*  is 4.836717 ms, path cost is 7.340377 m
+[ WARN] [1586509789.474823405]: visited_nodes size : 828
+[ INFO] [1586509793.479006233]: [node] receive the planning target
+[ WARN] [1586509793.490306906]: [A*]{sucess}  Time in A*  is 11.179998 ms, path cost is 7.774691 m
+[ WARN] [1586509793.491436058]: visited_nodes size : 2257
+[ INFO] [1586509797.399051681]: [node] receive the planning target
+[ WARN] [1586509797.409199451]: [A*]{sucess}  Time in A*  is 10.001116 ms, path cost is 7.774691 m
+[ WARN] [1586509797.410451888]: visited_nodes size : 1782
+[ INFO] [1586509803.989028979]: [node] receive the planning target
+[ WARN] [1586509804.030216552]: [A*]{sucess}  Time in A*  is 41.088160 ms, path cost is 9.858214 m
+[ WARN] [1586509804.030876371]: visited_nodes size : 12362
+
+
+
+Diagonal Distance
+
+[ INFO] [1586508444.200821870]: [node] receive the planning target
+[ WARN] [1586508444.202117223]: [A*]{sucess}  Time in A*  is 1.183392 ms, path cost is 7.340377 m
+[ WARN] [1586508444.203285856]: visited_nodes size : 237
+[ INFO] [1586508447.200811792]: [node] receive the planning target
+[ WARN] [1586508447.205938374]: [A*]{sucess}  Time in A*  is 5.053560 ms, path cost is 7.774691 m
+[ WARN] [1586508447.206529743]: visited_nodes size : 1261
+[ INFO] [1586508450.700823416]: [node] receive the planning target
+[ WARN] [1586508450.705308006]: [A*]{sucess}  Time in A*  is 4.361957 ms, path cost is 7.774691 m
+[ WARN] [1586508450.706218933]: visited_nodes size : 958
+[ INFO] [1586508454.140812008]: [node] receive the planning target
+[ WARN] [1586508454.174615188]: [A*]{sucess}  Time in A*  is 33.690078 ms, path cost is 9.858214 m
+[ WARN] [1586508454.175651391]: visited_nodes size : 10124
+
+
+Diagonal Distance via Tie Breaker
+
+[ INFO] [1586509484.932882391]: [node] receive the planning target
+[ WARN] [1586509484.933778071]: [A*]{sucess}  Time in A*  is 0.758718 ms, path cost is 7.340377 m
+[ WARN] [1586509484.935175291]: visited_nodes size : 91
+[ INFO] [1586509491.732874610]: [node] receive the planning target
+[ WARN] [1586509491.738032601]: [A*]{sucess}  Time in A*  is 5.046802 ms, path cost is 7.774691 m
+[ WARN] [1586509491.739187802]: visited_nodes size : 1072
+[ INFO] [1586509495.892922381]: [node] receive the planning target
+[ WARN] [1586509495.896919685]: [A*]{sucess}  Time in A*  is 3.894033 ms, path cost is 7.774691 m
+[ WARN] [1586509495.898061029]: visited_nodes size : 828
+[ INFO] [1586509501.102920812]: [node] receive the planning target
+[ WARN] [1586509501.135675500]: [A*]{sucess}  Time in A*  is 32.645211 ms, path cost is 9.858214 m
+[ WARN] [1586509501.136472945]: visited_nodes size : 10001
+
+
+
+*************************** A* Searching VS JPS *********************************
+
+[ INFO] [1586577108.550565180]: [node] receive the planning target
+[ WARN] [1586577108.550898824]: [A*]{sucess}  Time in A*  is 0.176366 ms, path cost is 5.429107 m
+[ WARN] [1586577108.552010740]: visited_nodes size : 24
+[ WARN] [1586577108.553837673]: [JPS]{sucess} Time in JPS is 0.334539 ms, path cost if 5.429107 m
+[ WARN] [1586577108.555204708]: visited_nodes size : 20
+[ INFO] [1586577112.250470088]: [node] receive the planning target
+[ WARN] [1586577112.250801022]: [A*]{sucess}  Time in A*  is 0.188567 ms, path cost is 3.414894 m
+[ WARN] [1586577112.252245437]: visited_nodes size : 13
+[ WARN] [1586577112.254050144]: [JPS]{sucess} Time in JPS is 0.154184 ms, path cost if 3.414894 m
+[ WARN] [1586577112.255400818]: visited_nodes size : 11
+[ INFO] [1586577122.530487403]: [node] receive the planning target
+[ WARN] [1586577122.530770039]: [A*]{sucess}  Time in A*  is 0.195953 ms, path cost is 4.672719 m
+[ WARN] [1586577122.531856055]: visited_nodes size : 19
+[ WARN] [1586577122.534081829]: [JPS]{sucess} Time in JPS is 0.172513 ms, path cost if 4.672719 m
+[ WARN] [1586577122.535173990]: visited_nodes size : 24
+[ INFO] [1586577126.100479697]: [node] receive the planning target
+[ WARN] [1586577126.100773301]: [A*]{sucess}  Time in A*  is 0.188852 ms, path cost is 4.629253 m
+[ WARN] [1586577126.101986718]: visited_nodes size : 22
+[ WARN] [1586577126.103553421]: [JPS]{sucess} Time in JPS is 0.114809 ms, path cost if 4.629253 m
+[ WARN] [1586577126.104753806]: visited_nodes size : 14
+[ INFO] [1586577130.120474443]: [node] receive the planning target
+[ WARN] [1586577130.120849663]: [A*]{sucess}  Time in A*  is 0.274263 ms, path cost is 4.476955 m
+[ WARN] [1586577130.121975036]: visited_nodes size : 24
+[ WARN] [1586577130.123486519]: [JPS]{sucess} Time in JPS is 0.137092 ms, path cost if 4.476955 m
+[ WARN] [1586577130.124568616]: visited_nodes size : 17
+[ INFO] [1586576937.460475102]: [node] receive the planning target
+[ WARN] [1586576937.460860671]: [A*]{sucess}  Time in A*  is 0.200535 ms, path cost is 3.701972 m
+[ WARN] [1586576937.462067057]: visited_nodes size : 13
+[ WARN] [1586576937.464014816]: [JPS]{sucess} Time in JPS is 0.218759 ms, path cost if 3.701972 m
+[ WARN] [1586576937.465417485]: visited_nodes size : 15
+[ INFO] [1586576952.160307996]: [node] receive the planning target
+[ WARN] [1586576952.160622393]: [A*]{sucess}  Time in A*  is 0.192085 ms, path cost is 3.107034 m
+[ WARN] [1586576952.162052740]: visited_nodes size : 13
+[ WARN] [1586576952.163644500]: [JPS]{sucess} Time in JPS is 0.097150 ms, path cost if 3.107034 m
+[ WARN] [1586576952.164785347]: visited_nodes size : 7
+[ INFO] [1586576972.190439477]: [node] receive the planning target
+[ WARN] [1586576972.190796796]: [A*]{sucess}  Time in A*  is 0.239933 ms, path cost is 6.029107 m
+[ WARN] [1586576972.192117921]: visited_nodes size : 24
+[ WARN] [1586576972.194054182]: [JPS]{sucess} Time in JPS is 0.160971 ms, path cost if 6.029107 m
+[ WARN] [1586576972.195121675]: visited_nodes size : 14
+[ INFO] [1586576975.440298477]: [node] receive the planning target
+[ WARN] [1586576975.440575505]: [A*]{sucess}  Time in A*  is 0.181725 ms, path cost is 5.311950 m
+[ WARN] [1586576975.441747629]: visited_nodes size : 20
+[ WARN] [1586576975.443324343]: [JPS]{sucess} Time in JPS is 0.153721 ms, path cost if 5.311950 m
+[ WARN] [1586576975.444464445]: visited_nodes size : 16
+[ INFO] [1586576977.590301818]: [node] receive the planning target
+[ WARN] [1586576977.590625066]: [A*]{sucess}  Time in A*  is 0.222723 ms, path cost is 4.277781 m
+[ WARN] [1586576977.591756162]: visited_nodes size : 26
+[ WARN] [1586576977.593276395]: [JPS]{sucess} Time in JPS is 0.100061 ms, path cost if 4.277781 m
+[ WARN] [1586576977.594469640]: visited_nodes size : 18
+[ INFO] [1586576979.040322200]: [node] receive the planning target
+[ WARN] [1586576979.040654631]: [A*]{sucess}  Time in A*  is 0.187293 ms, path cost is 3.746264 m
+[ WARN] [1586576979.042180345]: visited_nodes size : 13
+[ WARN] [1586576979.044269308]: [JPS]{sucess} Time in JPS is 0.199646 ms, path cost if 3.746264 m
+[ WARN] [1586576979.045731020]: visited_nodes size : 11
+[ INFO] [1586576980.580355157]: [node] receive the planning target
+[ WARN] [1586576980.580683642]: [A*]{sucess}  Time in A*  is 0.209983 ms, path cost is 5.468483 m
+[ WARN] [1586576980.582187758]: visited_nodes size : 24
+[ WARN] [1586576980.584139772]: [JPS]{sucess} Time in JPS is 0.311012 ms, path cost if 5.468483 m
+[ WARN] [1586576980.585289639]: visited_nodes size : 13
+[ INFO] [1586576982.660277582]: [node] receive the planning target
+[ WARN] [1586576982.660400600]: [A*]{sucess}  Time in A*  is 0.068631 ms, path cost is 5.614894 m
+[ WARN] [1586576982.660805069]: visited_nodes size : 26
+[ WARN] [1586576982.661298030]: [JPS]{sucess} Time in JPS is 0.037974 ms, path cost if 5.614894 m
+[ WARN] [1586576982.661714771]: visited_nodes size : 16
+[ INFO] [1586576985.990292876]: [node] receive the planning target
+[ WARN] [1586576985.991562448]: [A*]{sucess}  Time in A*  is 1.163227 ms, path cost is 5.385641 m
+[ WARN] [1586576985.992729217]: visited_nodes size : 212
+[ WARN] [1586576985.994451152]: [JPS]{sucess} Time in JPS is 0.202058 ms, path cost if 5.385641 m
+[ WARN] [1586576985.995591476]: visited_nodes size : 22
+
+
